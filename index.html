@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Content Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="tabs-container">
+        <div class="tabs-heading">
+            <button class="tab-link active" data-tab="tab1">ARCHITECTURE</button>
+            <button class="tab-link" data-tab="tab2">ENGINEERING</button>
+            <button class="tab-link" data-tab="tab3">CONSTRUCTION</button>
+        </div>
+        <div class="tabs-content">
+            <div id="tab1" class="tab-content active">
+                <div class="icon-box">
+                    <div class="icon">📁</div>
+                    <div class="title">MODELING</div>
+                    <div class="description">DIGITAL MODELING SOLUTIONS</div>
+                    <div class="buttons">
+                        <button>SD TO CD DRAWINGS</button>
+                        <button>DOCUMENTATION DRAWINGS</button>
+                        <button>CONTENT CREATION</button>
+                        <button>SCAN TO BIM/CAD</button>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab-content">
+                <!-- Add content for ENGINEERING tab -->
+            </div>
+            <div id="tab3" class="tab-content">
+                <!-- Add content for CONSTRUCTION tab -->
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
