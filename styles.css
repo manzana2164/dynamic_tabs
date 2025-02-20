@@ -1,37 +1,49 @@
-/* styles.css sera cierto?*/
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
 }
 
-.tabs-heading {
+.portfolio-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.portfolio-controls {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.tab-link {
+.view-toggle {
     padding: 10px 20px;
     cursor: pointer;
     background-color: #f0f0f0;
     border: none;
     outline: none;
+    margin-right: 10px;
 }
 
-.tab-link.active {
+.view-toggle.active {
     background-color: #0073e6;
     color: #fff;
 }
 
-.tabs-content {
-    display: none;
+.filters select, #sort-az {
+    padding: 10px;
+    margin-right: 10px;
 }
 
-.tabs-content.active {
+.portfolio-posts.grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.portfolio-posts.list-view {
     display: block;
 }
 
-.icon-box {
-    text-align: center;
+.post {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -39,58 +51,44 @@ body {
     transition: background 0.3s ease-in-out;
 }
 
-.icon-box:hover {
+.post:hover {
     background: #eee;
 }
 
-.icon {
-    font-size: 40px;
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-.title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.description {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.buttons {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.buttons button {
-    padding: 10px 15px;
+.post-description {
     font-size: 16px;
+    color: #666;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
     cursor: pointer;
+    background-color: #f0f0f0;
     border: none;
-    background: #ddd;
-    transition: background 0.3s ease-in-out;
-    margin: 5px;
+    outline: none;
 }
 
-.buttons button:hover {
-    background: #cccccc;
+.pagination button:hover {
+    background-color: #ddd;
 }
 
-/* Dynamic backgrounds */
-body.bg-arquitectura {
-    background: url('assets/BK arquitectura.png') no-repeat center center fixed;
-    background-size: cover;
-}
-
-body.bg-ingenieria {
-    background: url('assets/BK ingenieria.png') no-repeat center center fixed;
-    background-size: cover;
-}
-
-body.bg-construccion {
-    background: url('assets/BK ingenieria.png') no-repeat center center fixed;
-    background-size: cover;
+.pagination #page-number {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    border-radius: 5px;
 }
