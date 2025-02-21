@@ -1,6 +1,7 @@
 /* styles.css */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
 }
 
 .portfolio-container {
@@ -8,10 +9,7 @@ body {
     margin: 0 auto;
     background-color: #f0f0f0;
     border-radius: 25px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .portfolio-controls {
@@ -42,7 +40,6 @@ body {
 .portfolio-posts.grid-view {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
     gap: 10px;
     background-color: #f0f0f0;
 }
@@ -61,36 +58,52 @@ body {
     background: #f0f0f0;
 }
 
+.post-title, .post-place {
+    position: relative;
+    left: 15px;
+    color: #fff;
+    z-index: 2;
+    margin: 0;
+}
+
 .post-title {
+    top: 10px;
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 5px;
-    padding-top: 55px;
-    padding-left: 15px;
-    padding-bottom: 5px;
 }
 
 .post-place {
+    top: 10px;
     font-size: 15px;
     color: #c6c6c6;
-    padding-left: 15px;
-    margin-top: -10px;
 }
 
-.post-category, {
+.post-category, .post-year {
     font-size: 15px;
-    color: #9747FF;
     margin: 5px 0;
 }
+
+.post-category {
+    color: #9747FF;
+}
+
 .post-year {
-    font-size: 15px;
     color: #D87E00;
-    margin: 5px 0;
+}
+
+.post-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .post-image-container {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f0f0f0;
 }
 
 .post-image {
@@ -98,7 +111,6 @@ body {
     transition: filter 0.8s ease-in-out;
     filter: grayscale(100%);
     background-color: #f0f0f0;
-
 }
 
 .post-image-container:hover .post-image {
@@ -111,16 +123,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
+    background: rgba(0, 0, 0, 0.3);
+    transition: background 0.8s ease-in-out;
+    border-radius: 15px;
 }
 
 .post-image-container:hover .post-overlay {
-    opacity: 1;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 
 /* Pagination styles */
