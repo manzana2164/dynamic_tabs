@@ -1,6 +1,8 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f0f0f0;
 }
 
@@ -68,18 +70,19 @@ body {
 
 .post-title {
     top: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 .post-place {
     top: 10px;
-    font-size: 15px;
+    font-size: 14px;
     color: #c6c6c6;
 }
 
 .post-category, .post-year {
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: bold;
     margin: 5px 0;
 }
 
