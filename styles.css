@@ -16,10 +16,20 @@ body {
 
 .portfolio-controls {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 20px;
 }
-
+.toogle-buttons{
+    display: flex;
+    align-items: center
+    justify-content: center;
+    margin-right: 20px;
+}
+.filters {
+    display: flex;
+    align-items: right;
+    align-self: right;
+}
 .view-toggle {
     padding: 10px 20px;
     cursor: pointer;
