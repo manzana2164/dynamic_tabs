@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
     }
 
     // Pagination
-    var itemsPerPage = 6;
+    var itemsPerPage = 8; // Update to 8 items per page
     var currentPage = 1;
 
     function showPage(page) {
