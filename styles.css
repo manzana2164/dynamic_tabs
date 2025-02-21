@@ -44,6 +44,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 10px;
+    background-color: #f0f0f0;
 }
 
 .portfolio-posts.list-view {
@@ -53,6 +54,7 @@ body {
 .post {
     padding: 20px;
     transition: background 0.3s ease-in-out;
+    background: #f0f0f0;
 }
 
 .post:hover {
@@ -63,7 +65,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
-    padding-top: 45px;
+    padding-top: 55px;
     padding-left: 15px;
     padding-bottom: 5px;
 }
@@ -95,7 +97,7 @@ body {
     width: 100%;
     transition: filter 0.8s ease-in-out;
     filter: grayscale(100%);
-    background-color: #00000030;
+    background-color: #f0f0f0;
 
 }
 
@@ -113,10 +115,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: left;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
-    background-color: #00000030;
 }
 
 .post-image-container:hover .post-overlay {
