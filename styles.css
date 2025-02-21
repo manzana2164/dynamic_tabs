@@ -6,6 +6,12 @@ body {
 .portfolio-container {
     width: 80%;
     margin: 0 auto;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .portfolio-controls {
@@ -50,18 +56,33 @@ body {
 }
 
 .post:hover {
-    background: #eee;
+    background: #f0f0f0;
 }
 
 .post-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    padding-top: 45px;
+    padding-left: 15px;
+    padding-bottom: 5px;
 }
 
-.post-category, .post-year {
-    font-size: 16px;
-    color: #666;
+.post-place {
+    font-size: 15px;
+    color: #c6c6c6;
+    padding-left: 15px;
+    margin-top: -10px;
+}
+
+.post-category, {
+    font-size: 15px;
+    color: #9747FF;
+    margin: 5px 0;
+}
+.post-year {
+    font-size: 15px;
+    color: #D87E00;
     margin: 5px 0;
 }
 
@@ -74,6 +95,8 @@ body {
     width: 100%;
     transition: filter 0.8s ease-in-out;
     filter: grayscale(100%);
+    background-color: #00000030;
+
 }
 
 .post-image-container:hover .post-image {
@@ -86,14 +109,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
+    background-color: #00000030;
 }
 
 .post-image-container:hover .post-overlay {
